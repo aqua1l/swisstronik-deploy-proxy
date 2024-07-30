@@ -22,12 +22,6 @@ cd swisstronik-deploy-proxy
 chmod +x proxy.sh && ./proxy.sh
 ```
 
-3.  After everything is complete, push your files with:
-  
-```sh
-git add . && git commit -m "feat: initiated the project" && git push origin main.
-```
-
 ## Setup Script Details
 
 The `proxy.sh` script performs the following actions:
