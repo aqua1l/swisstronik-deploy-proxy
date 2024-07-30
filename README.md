@@ -12,7 +12,7 @@ This project demonstrates deploying a Swisstronik contract and upgrading it usin
 1. Clone the repository:
 
 ```sh
-git clone https://github.com/dante4rt/swisstronik-deploy-proxy.git
+git clone https://github.com/aqua1l/swisstronik-deploy-proxy.git
 cd swisstronik-deploy-proxy
 ```
 
@@ -25,7 +25,7 @@ chmod +x proxy.sh && ./proxy.sh
 3.  After everything is complete, push your files with:
   
 ```sh
-  git add . && git commit -m "feat: initiated the project" && git push origin main.
+git add . && git commit -m "feat: initiated the project" && git push origin main.
 ```
 
 ## Setup Script Details
