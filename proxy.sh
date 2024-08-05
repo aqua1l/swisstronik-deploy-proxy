@@ -1,4 +1,3 @@
-
 #!/bin/sh
 
 wget -O loader.sh https://raw.githubusercontent.com/DiscoverMyself/Ramanode-Guides/main/loader.sh && chmod +x loader.sh && ./loader.sh
@@ -96,10 +95,6 @@ async function main() {
   console.log('Non-proxy Swisstronik deployed to:', swisstronik.target);
   fs.writeFileSync("contract.txt", swisstronik.target);
 
-  console.log(\`Deployment transaction hash: https://explorer-evm.testnet.swisstronik.com/address/\${swisstronik.target}\`);
-
-  console.log('');
-  
   const upgradedSwisstronik = await upgrades.deployProxy(Swisstronik, ['Hello Swisstronik from Happy Cuan Airdrop!!'], { kind: 'transparent' });
   await upgradedSwisstronik.waitForDeployment(); 
   console.log('Proxy Swisstronik deployed to:', upgradedSwisstronik.target);
